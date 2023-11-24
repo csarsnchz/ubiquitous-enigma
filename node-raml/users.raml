@@ -1,0 +1,12 @@
+#%RAML 1.0
+title: My API
+version: v1
+baseUri: http://localhost:3000/api/{version}
+/users:
+  get:
+    responses:
+      200:
+        body:
+          application/json:
+            example: |
+              {"message": "Getting all users"}
